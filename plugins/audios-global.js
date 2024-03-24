@@ -259,7 +259,7 @@ conn.sendPresenceUpdate('recording', m.chat)
 conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: fkontak})
 }
 
-if (!chat.isBanned && m.text.match(/(UwU|uwu|Uwu|uU|UWU)/gi)) {
+if (!chat.isBanned && m.text.match(/(UwU|uwu|Uwu|uwU|UWU)/gi)) {
 if (!db.data.chats[m.chat].audios) return
 let vn = 'https://qu.ax/lOCR.mp3'
 conn.sendPresenceUpdate('recording', m.chat)
